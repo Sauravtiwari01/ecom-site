@@ -9,14 +9,15 @@ import BrandSlider from '../Components/BrandSlider'
 import CategorySlider from '../Components/CategorySlider'
 import Features from '../Components/Features'
 import { Link } from 'react-router-dom'
+import db from "../data/data.json"
 export default function Homepage() {
   let Dispatch = useDispatch()
-  let ProductStateData = useSelector(state => state.ProductStateData)
+  let ProductStateData = db.products
   useEffect(() => {
     Dispatch(GetProduct())
   }, [ProductStateData.length])
   let data = ProductStateData.filter(x => x.active)
-  let CategoryStateData = useSelector(state => state.CategoryStateData)
+  let CategoryStateData = db.category
   useEffect(() => {
     Dispatch(GetCategory())
   }, [CategoryStateData.length])
