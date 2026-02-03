@@ -24,7 +24,7 @@ export default function ({ item }) {
                     </div>
                     <Link to={`/shop/products/${item.id}`}>
                         <img
-                            src={`${import.meta.env.VITE_SITE_IMG_SERVER}${item.pic[0]}`}
+                            src={`${item.pic[0]}`}
                             className="card-img-top"
                             alt="..."
                         />

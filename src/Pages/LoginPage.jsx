@@ -5,9 +5,10 @@ import FormValidators from '../Validators/FormValidators'
 import { useDispatch, useSelector } from 'react-redux'
 import { GetUser } from '../Redux/ActionCreators/UserActionCreator'
 
+import db from "../data/data.json"
 
 export default function LoginPage() {
-  let userStateData = useSelector(state => state.userStateData)
+  let userStateData = db.user
 
   let [user, setUser] = useState({
     userName: "",

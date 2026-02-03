@@ -13,7 +13,7 @@ export default function TrendingProducts({data}) {
               <div className="row align-items-center justify-content-center">
                 <div className="col-lg-6 text-center">
                   <img
-                    src={`${import.meta.env.VITE_SITE_IMG_SERVER}${data?.pic[0]}`}
+                    src={`${data?.pic[0]}`}
                     style={{height:'350px'}}
                     className="img-fluid rounded-0"
                     alt="..."

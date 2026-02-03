@@ -5,10 +5,11 @@ import BuyerSiderbar from '../Components/BuyerSiderbar';
 import { useDispatch, useSelector } from 'react-redux';
 import { GetUser } from '../Redux/ActionCreators/UserActionCreator';
 
+import db from "../data/data.json"
 export default function ProfilePage() {
   let navigate = useNavigate()
   let dispatch = useDispatch()
-  let userStateData = useSelector((state) => state.userStateData)
+  let userStateData = db.user
   let [data, setData] = useState([])
 
   useEffect(() => {

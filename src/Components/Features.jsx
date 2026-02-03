@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react'
 import { GetFeature } from '../Redux/ActionCreators/FeatureActionCreator'
 import { useDispatch, useSelector } from 'react-redux'
+import db from "../data/data.json"
 export default function Features() {
-    let FeatureStateData = useSelector(state => state.FeatureStateData)
+    let FeatureStateData = db.feature
     let Dispatch = useDispatch()
     useEffect(() => {
         (() => { Dispatch(GetFeature()) })()

@@ -4,6 +4,7 @@ import { GetProduct } from '../Redux/ActionCreators/ProductActionCreator'
 import { GetSubCategory } from '../Redux/ActionCreators/SubCategoryActionCreator'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom'
+import db from "../data/data.json"
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -28,12 +29,12 @@ export default function ProductPage() {
   let [quantity, setQuantity] = useState(1)
 
 
-  let ProductStateData = useSelector(state => state.ProductStateData)
-  let SubCategoryStateData = useSelector(state => state.SubCategoryStateData)
-  let cartStateData = useSelector(state => state.cartStateData)
-  let wishlistStateData = useSelector(state => state.wishlistStateData)
-  let testimonialStateData = useSelector(state => state.testimonialStateData)
-  let orderStateData = useSelector((state) => state.orderStateData)
+  let ProductStateData = db.products
+  let SubCategoryStateData = db['sub-category']
+  let cartStateData = db.cart
+  let wishlistStateData = db.wishlist
+  let testimonialStateData = db.testimonials
+  let orderStateData = db.orders
   let dispatch = useDispatch()
   let [data, setData] = useState([])
   let [relatedProducts, setRelatedProducts] = useState([])
@@ -199,10 +200,10 @@ export default function ProductPage() {
                               <div
                                 className="img-thumb-container overflow-hidden position-relative"
                                 data-fancybox="gallery"
-                                data-src={`${import.meta.env.VITE_SITE_IMG_SERVER}${item}`}
+                                data-src={`${item}`}
                               >
 
-                                <img src={`${import.meta.env.VITE_SITE_IMG_SERVER}${item}`}
+                                <img src={`${item}`}
                                   className="img-fluid"
                                   alt=""
                                 />
@@ -225,7 +226,7 @@ export default function ProductPage() {
 
                         {data.pic?.map((item, index) => {
                           return <SwiperSlide key={index}>
-                            <img src={`${import.meta.env.VITE_SITE_IMG_SERVER}${item}`} style={{ width: "100%", height: "100%", aspectRatio: "auto" }} />
+                            <img src={`${item}`} style={{ width: "100%", height: "100%", aspectRatio: "auto" }} />
                           </SwiperSlide>
                         })}
                       </Swiper>

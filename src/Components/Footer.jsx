@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { GetSetting } from '../Redux/ActionCreators/SettingActionCreator'
 import { DeleteCart, GetCart } from '../Redux/ActionCreators/CartActionCreator'
+import db from "../data/data.json"
 export default function Footer() {
-  let settingStateData = useSelector(state => state.settingStateData)
-  let cartStateData = useSelector(state => state.cartStateData)
+  let settingStateData = db.settings
+  let cartStateData = db.cart
   let [cart, setcart] = useState([])
   let [data, setData] = useState({
     map1: "",
@@ -199,7 +200,7 @@ export default function Footer() {
                     <div className="d-flex align-items-center gap-3">
                       <div className="bottom-product-img">
                         <a href="product-details.html">
-                          <img src={`${import.meta.env.VITE_SITE_IMG_SERVER}${item.pic[0]}`} width={60} alt="" />
+                          <img src={`${item.pic[0]}`} width={60} alt="" />
                         </a>
                       </div>
                       <div className="">

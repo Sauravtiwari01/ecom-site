@@ -27,9 +27,9 @@ function getSlideView() {
 
 export default function CategorySlider() {
     let Dispatch = useDispatch()
-    let SubCategoryStateData = db.category
+    let SubCategoryStateData = db['sub-category']
     useEffect(() => { Dispatch(GetSubCategory()) }, [SubCategoryStateData.length])
-    let ProductStateData = db['sub-category']
+    let ProductStateData = db.products
     useEffect(() => { Dispatch(GetProduct()) }, [ProductStateData.length])
 
     let [slidePerView, setSlidePerView] = useState(getSlideView())

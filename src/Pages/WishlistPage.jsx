@@ -6,10 +6,11 @@ import { useDispatch, useSelector } from 'react-redux'
 import { DeleteWishlist, GetWishlist } from '../Redux/ActionCreators/WishlistActionCreator'
 import { CreateCart } from '../Redux/ActionCreators/CartActionCreator'
 import toast, { Toaster } from 'react-hot-toast';
+import db from "../data/data.json"
 
 export default function WishlistPage() {
-  let wishlistStateData = useSelector(state => state.wishlistStateData)
-  let cartStateData = useSelector(state => state.cartStateData)
+  let wishlistStateData = db.wishlist
+  let cartStateData = db.cart
   let navigate = useNavigate()
   let dispatch = useDispatch()
 
@@ -60,7 +61,7 @@ export default function WishlistPage() {
                       <button onClick={() => { removeWishlist(item.id) }} className="btn-close wishlist-close position-absolute end-0 top-0"></button>
                       <Link to={`/shop/products/${item.id}`}>
                         <img
-                          src={`${import.meta.env.VITE_SITE_IMG_SERVER}${item.pic[0]}`}
+                          src={`${item.pic[0]}`}
                           alt=""
                           className="card-img-top rounded-0"
                         />

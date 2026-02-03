@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
 import { GetOrder } from '../Redux/ActionCreators/OrderActionCreator'
+import db from "../data/data.json"
 
 export default function OrderConfirmationPage() {
-    let orderStateData = useSelector(state => state.orderStateData)
+    let orderStateData = db.orders
     let dispatch = useDispatch()
     let [data, setData] = useState([])
     let [order, setOrder] = useState([])

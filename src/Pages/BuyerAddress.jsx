@@ -6,11 +6,12 @@ import { useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { CreateAddress, DeleteAddress, GetAddress, UpdateAddress } from '../Redux/ActionCreators/AddressActionCreator'
 
+import db from "../data/data.json"
 export default function BuyerAddress() {
   let [defaultAddress, setDefaultAddress] = useState({})
   let [addresses, setAddresses] = useState({})
   let [editAddress, setEditAddress] = useState({})
-  let addressStateData = useSelector(state => state.addressStateData)
+  let addressStateData = db.address
   let [data, setData] = useState(
     {
       userid: localStorage.getItem("userid"),

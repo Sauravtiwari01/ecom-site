@@ -6,11 +6,12 @@ import { GetCart, DeleteCart } from '../Redux/ActionCreators/CartActionCreator'
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import toast, { Toaster } from 'react-hot-toast';
 import { CreateWishlist, GetWishlist } from '../Redux/ActionCreators/WishlistActionCreator'
+import db from "../data/data.json"
 
 export default function CartPage() {
 
-  let cartStateData = useSelector(state => state.cartStateData)
-  let wishlistStateData = useSelector(state => state.wishlistStateData)
+  let cartStateData = db.cart
+  let wishlistStateData = db.wishlist
   let [data, setData] = useState([])
   let dispatch = useDispatch()
   let navigate = useNavigate()
@@ -79,7 +80,7 @@ export default function CartPage() {
                       <div className="d-flex flex-column flex-lg-row gap-3">
                         <Link to={`/shop/products/${item.id}`}><div className="product-img">
                           <img
-                            src={`${import.meta.env.VITE_SITE_IMG_SERVER}${item.pic[0]}`}
+                            src={`${item.pic[0]}`}
                             width={150}
                             alt=""
                           />

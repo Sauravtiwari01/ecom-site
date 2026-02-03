@@ -7,10 +7,11 @@ import { DeleteCart, GetCart, UpdateCart } from '../Redux/ActionCreators/CartAct
 import { GetProduct, UpdateProduct } from '../Redux/ActionCreators/ProductActionCreator'
 import { CreateOrder } from '../Redux/ActionCreators/OrderActionCreator'
 import { Link, useNavigate } from 'react-router-dom'
+import db from "../data/data.json"
 export default function CheckoutPage() {
-    let addressStateData = useSelector(state => state.addressStateData)
-    let cartStateData = useSelector(state => state.cartStateData)
-    let ProductStateData = useSelector(state => state.ProductStateData || [])
+    let addressStateData = db.address
+    let cartStateData = db.cart
+    let ProductStateData = db.products || []
     let dispatch = useDispatch()
     let [addresses, setAddresses] = useState({})
     let [selectedAddress, setSelectedAddress] = useState(null)

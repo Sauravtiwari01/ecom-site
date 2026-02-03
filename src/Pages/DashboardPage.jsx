@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom'
 import BuyerSiderbar from '../Components/BuyerSiderbar'
 import { GetUser } from '../Redux/ActionCreators/UserActionCreator'
 import { useDispatch, useSelector } from 'react-redux'
+import db from "../data/data.json"
 export default function DashboardPage() {
-  let userStateData = useSelector((state) => state.userStateData)
+  let userStateData = db.user
   let [data, setData] = useState([])
   let dispatch = useDispatch()
 

@@ -5,9 +5,10 @@ import FormValidators from '../Validators/FormValidators'
 import { useDispatch, useSelector } from 'react-redux'
 import { CreateUser, GetUser } from '../Redux/ActionCreators/UserActionCreator'
 
+import db from "../data/data.json"
 
 export default function Signup() {
-  let userStateData = useSelector((state) => state.userStateData)
+  let userStateData = db.user
   let [data, setData] = useState([])
   let [user, setUser] = useState({
     name: "",

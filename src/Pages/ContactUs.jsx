@@ -6,9 +6,10 @@ import { GetUser } from '../Redux/ActionCreators/UserActionCreator'
 import { CreateContactUS } from '../Redux/ActionCreators/ContactUsActionCreator'
 import FormValidators from '../Validators/FormValidators'
 import toast, { Toaster } from 'react-hot-toast';
+import db from "../data/data.json"
 export default function ContactUs() {
-  let settingStateData = useSelector(state => state.settingStateData)
-  let userStateData = useSelector(state => state.userStateData)
+  let settingStateData = db.settings
+  let userStateData = db.user
   const uid = localStorage.getItem("userid")
   const notify = (msg) => toast(msg);
   let [data, setData] = useState([])

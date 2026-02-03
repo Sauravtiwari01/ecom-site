@@ -6,12 +6,13 @@ import { GetProduct } from '../Redux/ActionCreators/ProductActionCreator'
 import { GetBrand } from '../Redux/ActionCreators/BrandActionCreator'
 import { GetSubCategory } from '../Redux/ActionCreators/SubCategoryActionCreator'
 import { Link, useSearchParams } from 'react-router-dom'
+import db from "../data/data.json"
 import ProductCard from '../Components/ProductCard'
 export default function ShopPage() {
-  let CategoryStateData = useSelector(state => state.CategoryStateData)
-  let ProductStateData = useSelector(state => state.ProductStateData)
-  let SubCategoryStateData = useSelector(state => state.SubCategoryStateData)
-  let brandStateData = useSelector(state => state.brandStateData)
+  let CategoryStateData = db.category
+  let ProductStateData = db.products
+  let SubCategoryStateData = db['sub-category']
+  let brandStateData = db.brands
   let Dispatch = useDispatch()
   let [search, setSearch] = useState("")
   let [product, setProduct] = useState([])

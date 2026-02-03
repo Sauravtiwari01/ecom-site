@@ -10,11 +10,12 @@ import {
   UpdateTestimonial,
 } from "../Redux/ActionCreators/TestimonialActionCreator"
 import FormValidators from "../Validators/FormValidators"
+import db from "../data/data.json"
 
 export default function OrderPage() {
   const dispatch = useDispatch()
-  const orderStateData = useSelector((state) => state.orderStateData) || []
-  const testimonialStateData = useSelector((state) => state.testimonialStateData) || []
+  const orderStateData = db.orders || []
+  const testimonialStateData = db.testimonials || []
 
   const [data, setData] = useState([])
   const [reviewData, setReviewData] = useState({ review: "" })
@@ -217,7 +218,7 @@ export default function OrderPage() {
                             <div className="product-img mb-2">
                               <Link to={`/shop/products/${p.id}`}>
                                 <img
-                                  src={`${import.meta.env.VITE_SITE_IMG_SERVER}${p.pic[0]}`}
+                                  src={`${p.pic[0]}`}
                                   width={120}
                                   alt={p.name}
                                 />

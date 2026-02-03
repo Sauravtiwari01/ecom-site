@@ -3,8 +3,9 @@ import { useDispatch, useSelector } from 'react-redux'
 import FormValidators from '../Validators/FormValidators'
 import { GetNewsletter, CreateNewsletter } from '../Redux/ActionCreators/NewsletterActionCreator'
 
+import db from "../data/data.json"
 export default function Newsletter() {
-  let newsletterStateData = useSelector((state) => state.newsletterStateData)
+  let newsletterStateData = db.newsletter
   let dispatch = useDispatch()
   let [email, setEmail] = useState("")
   let [errorMessage, setErrorMessage] = useState("Enter Email")

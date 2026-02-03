@@ -5,9 +5,10 @@ import BuyerSiderbar from '../Components/BuyerSiderbar'
 import FormValidators from '../Validators/FormValidators'
 import { useDispatch, useSelector } from 'react-redux'
 import { GetUser, UpdateUser } from '../Redux/ActionCreators/UserActionCreator'
+import db from "../data/data.json"
 
 export default function UpdateProfile() {
-  let userStateData = useSelector((state) => state.userStateData)
+  let userStateData = db.user
   let [data, setData] = useState({
     gender: "",
     dob: "",
