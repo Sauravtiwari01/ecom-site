@@ -55,7 +55,7 @@ export default function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path='/' element={<HomePage />} />
+          <Route path='ecom-site/' element={<HomePage />} />
           <Route path='/shop' element={<ShopPage />} />
           <Route path='/about' element={<AboutPage />} />
           <Route path='/shop/products/:id' element={<ProductPage />} />
