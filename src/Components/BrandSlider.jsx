@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
-
+import db from "../data/data.json"
 // import required modules
 import { FreeMode, Autoplay } from 'swiper/modules';
 function getSlideView() {
@@ -20,7 +20,7 @@ function getSlideView() {
     return 6
 }
 export default function BrandSlider() {
-  let brandStateData = useSelector(state => state.brandStateData)
+  let brandStateData = db.brands
   let Dispatch = useDispatch()
   useEffect(() => { Dispatch(GetBrand()) }, [brandStateData.length])
 

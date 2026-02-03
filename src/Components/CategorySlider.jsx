@@ -11,6 +11,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 
+import db from "../data/data.json"
 // import required modules
 import { FreeMode, Autoplay } from 'swiper/modules';
 function getSlideView() {
@@ -26,9 +27,9 @@ function getSlideView() {
 
 export default function CategorySlider() {
     let Dispatch = useDispatch()
-    let SubCategoryStateData = useSelector(state => state.SubCategoryStateData)
+    let SubCategoryStateData = db.category
     useEffect(() => { Dispatch(GetSubCategory()) }, [SubCategoryStateData.length])
-    let ProductStateData = useSelector(state => state.ProductStateData)
+    let ProductStateData = db['sub-category']
     useEffect(() => { Dispatch(GetProduct()) }, [ProductStateData.length])
 
     let [slidePerView, setSlidePerView] = useState(getSlideView())
