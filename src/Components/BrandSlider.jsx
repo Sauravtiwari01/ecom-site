@@ -61,7 +61,7 @@ export default function BrandSlider() {
                       <div className="d-flex align-items-center">
                         <a href="javascript:;">
                           <img style={{ maxHeight: '200px' }}
-                            src={`${import.meta.env.VITE_SITE_IMG_SERVER}${item.pic}`}
+                            src={`${item.pic}`}
                             className="img-fluid"
                             alt=""
                           />
