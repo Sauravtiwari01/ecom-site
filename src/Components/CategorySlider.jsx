@@ -67,7 +67,7 @@ export default function CategorySlider() {
                                             <div className="card-body">
                                                 <div className="overflow-hidden">
                                                     <img
-                                                        src={`${import.meta.env.VITE_SITE_IMG_SERVER}${item.pic}`}
+                                                        src={`${item.pic}`}
                                                         className="card-img-top rounded-0"
                                                         alt="..."
                                                     />
