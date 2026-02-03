@@ -52,7 +52,7 @@ import AdminManageUsersPage from './Pages/Admin/Users/AdminManageUsersPage.jsx'
 export default function App() {
   return (
     <>
-      <BrowserRouter  basename="/ecom-site">
+      <BrowserRouter >
         <Navbar />
         <Routes>
           <Route path='/' element={<HomePage />} />
