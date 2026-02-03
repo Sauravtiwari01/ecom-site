@@ -1,0 +1,1008 @@
+{
+  "category": [
+    {
+      "name": "Electronic",
+      "pic": "/category/electronics.jpg",
+      "active": false,
+      "id": "603c"
+    },
+    {
+      "id": "4e59",
+      "name": "Male",
+      "pic": "/category/male.jpg",
+      "active": true
+    },
+    {
+      "id": "9cfd",
+      "name": "Female",
+      "pic": "/category/female.jpg",
+      "active": true
+    }
+  ],
+  "sub-category": [
+    {
+      "id": "a44e",
+      "name": "Shirt",
+      "pic": "/subcategory/shirt.jpg",
+      "active": true
+    },
+    {
+      "id": "7b83",
+      "name": "Trouser",
+      "pic": "/subcategory/trouser.jpg",
+      "active": true
+    },
+    {
+      "id": "eaa0",
+      "name": "Tshirt",
+      "pic": "/subcategory/tshirt.jpg",
+      "active": true
+    },
+    {
+      "id": "9a24",
+      "name": "Jacket",
+      "pic": "/subcategory/jacket.jpg",
+      "active": true
+    },
+    {
+      "id": "ea2d",
+      "name": "Track pant",
+      "pic": "/subcategory/trackpants.jpg",
+      "active": true
+    },
+    {
+      "id": "d9a6",
+      "name": "Sweater",
+      "pic": "/subcategory/sweater.jpg",
+      "active": true
+    },
+    {
+      "id": "9c5f",
+      "name": "Jeans",
+      "pic": "/subcategory/jeans.jpg",
+      "active": true
+    }
+  ],
+  "brands": [
+    {
+      "name": "adidas",
+      "pic": "/brands/adidas.png",
+      "active": true,
+      "id": "2e9c"
+    },
+    {
+      "id": "26b1",
+      "name": "Gucci",
+      "pic": "/brands/gucci.png",
+      "active": true
+    },
+    {
+      "id": "134e",
+      "name": "Zara",
+      "pic": "/brands/zara.png",
+      "active": true
+    },
+    {
+      "id": "c74f",
+      "name": "COBB",
+      "pic": "/brands/images (1).png",
+      "active": true
+    },
+    {
+      "id": "07bf",
+      "name": "NIKE",
+      "pic": "/brands/nike.png",
+      "active": true
+    },
+    {
+      "id": "8521",
+      "name": "PUMA",
+      "pic": "/brands/puma.jpg",
+      "active": true
+    },
+    {
+      "id": "f367",
+      "name": "TOMMY HILFIGER",
+      "pic": "/brands/tommy-hilfiger.png",
+      "active": true
+    },
+    {
+      "id": "459d",
+      "name": "MUFTI",
+      "pic": "/brands/mufti.png",
+      "active": true
+    },
+    {
+      "id": "10f5",
+      "name": "US POLO ASSN",
+      "pic": "/brands/U.S.-Polo-Assn-Logo.jpg",
+      "active": true
+    }
+  ],
+  "feature": [
+    {
+      "name": "Secure Checkout",
+      "icon": "<i class=\"bi bi-shield-lock\"></i>",
+      "description": "Complete your order through a fast and secure payment process",
+      "active": false,
+      "id": "798c"
+    },
+    {
+      "id": "6ad6",
+      "name": "Order Tracking",
+      "icon": "<i class=\"bi bi-truck\"></i>",
+      "description": "Track your order’s real-time delivery status anytime.",
+      "active": true
+    },
+    {
+      "id": "1e3b",
+      "name": "Payment Options",
+      "icon": "<i class=\"bi bi-credit-card\"></i>",
+      "description": "Multiple payment gateways for easy and secure transactions.",
+      "active": true
+    },
+    {
+      "id": "8039",
+      "name": "Return & Refund",
+      "icon": "<i class=\"bi bi-arrow-repeat\"></i>",
+      "description": "Hassle-free return and refund process for your convenience.",
+      "active": true
+    },
+    {
+      "name": "Live Chat",
+      "icon": "<i class=\"bi bi-chat-dots\"></i>",
+      "description": "Instantly connect with support through live chat anytime.",
+      "active": true,
+      "id": "980e"
+    }
+  ],
+  "faq": [
+    {
+      "question": "What payment methods do you accept?",
+      "answer": "We accept credit/debit cards, UPI, net banking, and popular wallets for your convenience.",
+      "active": true,
+      "id": "3591"
+    },
+    {
+      "id": "a287",
+      "question": "How long does delivery take?",
+      "answer": "Orders are usually delivered within 3–7 business days depending on your location.",
+      "active": true
+    },
+    {
+      "id": "ea43",
+      "question": "How do I return a product?",
+      "answer": "You can request a return within 7 days of delivery through your account’s order section.",
+      "active": false
+    }
+  ],
+  "products": [
+    {
+      "name": "Floral Embroidered Shirt",
+      "category": "Male",
+      "SubCategory": "Shirt",
+      "brand": "Zara",
+      "color": [
+        "brown",
+        "white"
+      ],
+      "size": [
+        "m",
+        "s",
+        "l"
+      ],
+      "stockQuantity": 74,
+      "stock": true,
+      "basePrice": 4999,
+      "finalPrice": 4499,
+      "discount": 10,
+      "productDescription": "<p>This is test product</p>",
+      "pic": [
+        "/products/p1.jpg",
+        "/products/p5.jpg",
+        "/products/p6.jpg"
+      ],
+      "active": true,
+      "id": "b937"
+    },
+    {
+      "id": "89cc",
+      "name": "Floral Printed Shirt",
+      "category": "Male",
+      "SubCategory": "Shirt",
+      "brand": "Gucci",
+      "color": [
+        "blue",
+        "black",
+        "wine"
+      ],
+      "size": [
+        "l",
+        "m",
+        "s",
+        "xs"
+      ],
+      "stockQuantity": 66,
+      "stock": true,
+      "basePrice": 6999,
+      "finalPrice": 6579,
+      "discount": 6,
+      "productDescription": "<p>This is test product</p>",
+      "pic": [
+        "/products/p2.jpg",
+        "/products/p3.jpg",
+        "/products/p4.jpg"
+      ],
+      "active": true
+    },
+    {
+      "name": "Striped Polo",
+      "category": "Male",
+      "SubCategory": "Tshirt",
+      "brand": "TOMMY HILFIGER",
+      "color": [
+        "pink",
+        "brown",
+        "blue",
+        "red"
+      ],
+      "size": [
+        "s",
+        "m",
+        "l"
+      ],
+      "stockQuantity": 10,
+      "stock": false,
+      "basePrice": 666,
+      "finalPrice": 626,
+      "discount": 6,
+      "productDescription": "",
+      "pic": [
+        "/products/p7.jpg",
+        "/products/p8.jpg",
+        "/products/p9.jpg"
+      ],
+      "active": true,
+      "id": "4996"
+    },
+    {
+      "id": "bff5",
+      "name": "Checked Shirt Half Sleeves",
+      "category": "Male",
+      "SubCategory": "Shirt",
+      "brand": "Gucci",
+      "color": [
+        "beige",
+        "black",
+        "brown",
+        "green"
+      ],
+      "size": [
+        "m",
+        "l",
+        "xl",
+        "xxl"
+      ],
+      "stockQuantity": 56,
+      "stock": true,
+      "basePrice": 899,
+      "finalPrice": 719,
+      "discount": 20,
+      "productDescription": "<p>This is a test Product</p>",
+      "pic": [
+        "/products/p10.jpg",
+        "/products/p11.jpg",
+        "/products/p12.jpg"
+      ],
+      "active": true
+    },
+    {
+      "id": "c983",
+      "name": "Tiger Printed Shirt",
+      "category": "Male",
+      "SubCategory": "Shirt",
+      "brand": "MUFTI",
+      "color": [
+        "red",
+        "green",
+        "black"
+      ],
+      "size": [
+        "s",
+        "xs",
+        "m",
+        "l",
+        "xl"
+      ],
+      "stockQuantity": 4,
+      "stock": true,
+      "basePrice": 799,
+      "finalPrice": 719,
+      "discount": 10,
+      "productDescription": "<p>This is a test product</p>",
+      "pic": [
+        "/products/p13.jpg",
+        "/products/p14.jpg",
+        "/products/p15.jpg"
+      ],
+      "active": true
+    },
+    {
+      "id": "2372",
+      "name": "Solid Shirt",
+      "category": "Female",
+      "SubCategory": "Shirt",
+      "brand": "Zara",
+      "color": [
+        "white",
+        "grey",
+        "brown"
+      ],
+      "size": [],
+      "stockQuantity": 66,
+      "stock": true,
+      "basePrice": 4999,
+      "finalPrice": 3999,
+      "discount": 20,
+      "productDescription": "<p>This is a test Product</p>",
+      "pic": [
+        "/products/p16.jpg",
+        "/products/p17.jpg",
+        "/products/p18.jpg"
+      ],
+      "active": true
+    },
+    {
+      "id": "0dd7",
+      "name": "Striped Shirt",
+      "category": "Female",
+      "SubCategory": "Shirt",
+      "brand": "Zara",
+      "color": [
+        "pink",
+        "blue"
+      ],
+      "size": [
+        "s",
+        "m",
+        "xs"
+      ],
+      "stockQuantity": 65,
+      "stock": true,
+      "basePrice": 4999,
+      "finalPrice": 3999,
+      "discount": 20,
+      "productDescription": "<p>\n\n<span style=\"color: rgb(65, 65, 65); font-size: 14px\">This is a test Product</span>\n<br /></p>",
+      "pic": [
+        "/products/p19.jpg",
+        "/products/p20.jpg",
+        "/products/p21.jpg"
+      ],
+      "active": true
+    },
+    {
+      "id": "30db",
+      "name": "Long Collar Shirt",
+      "category": "Female",
+      "SubCategory": "Shirt",
+      "brand": "Zara",
+      "color": [
+        "white",
+        "pink",
+        "green",
+        "violet"
+      ],
+      "size": [
+        "xs",
+        "s",
+        "m",
+        "l",
+        "xl"
+      ],
+      "stockQuantity": 66,
+      "stock": true,
+      "basePrice": 5000,
+      "finalPrice": 4000,
+      "discount": 20,
+      "productDescription": "<p>\n\n<span style=\"color: rgb(65, 65, 65); font-size: 14px\">This is a test Product</span>\n<br /></p>",
+      "pic": [
+        "/products/p22.jpg",
+        "/products/p23.jpg",
+        "/products/p24.jpg"
+      ],
+      "active": true
+    },
+    {
+      "id": "5a1b",
+      "name": "Solid Polo",
+      "category": "Female",
+      "SubCategory": "Tshirt",
+      "brand": "COBB",
+      "color": [
+        "pink",
+        "blue",
+        "red",
+        "brown",
+        "wine",
+        "grey",
+        "black"
+      ],
+      "size": [
+        "s",
+        "m",
+        "l",
+        "xl",
+        "xxl",
+        "xs"
+      ],
+      "stockQuantity": 66,
+      "stock": true,
+      "basePrice": 666,
+      "finalPrice": 599,
+      "discount": 10,
+      "productDescription": "<p>\n\n<span style=\"color: rgb(65, 65, 65); font-size: 14px\">This is a test Product</span>\n<br /></p>",
+      "pic": [
+        "/products/p25.jpg",
+        "/products/p26.jpg",
+        "/products/p28.jpg"
+      ],
+      "active": true
+    },
+    {
+      "id": "0b70",
+      "name": "Cropped Shirt",
+      "category": "Female",
+      "SubCategory": "Shirt",
+      "brand": "Gucci",
+      "color": [
+        "green",
+        "pink",
+        "brown"
+      ],
+      "size": [
+        "m",
+        "s",
+        "l",
+        "xl"
+      ],
+      "stockQuantity": 77,
+      "stock": true,
+      "basePrice": 1659,
+      "finalPrice": 1493,
+      "discount": 10,
+      "productDescription": "<p>\n\n<span style=\"color: rgb(65, 65, 65); font-size: 14px\">This is a test Product</span>\n<br /></p>",
+      "pic": [
+        "/products/p28.jpg",
+        "/products/p29.jpg",
+        "/products/p30.jpg"
+      ],
+      "active": true
+    },
+    {
+      "id": "61c8",
+      "name": "Solid Slim Fit Trouser",
+      "category": "Female",
+      "SubCategory": "Trouser",
+      "brand": "MUFTI",
+      "color": [
+        "wine",
+        "white",
+        "black"
+      ],
+      "size": [
+        "s",
+        "m",
+        "l",
+        "xl"
+      ],
+      "stockQuantity": 64,
+      "stock": true,
+      "basePrice": 666,
+      "finalPrice": 626,
+      "discount": 6,
+      "productDescription": "<p>\n\n<span style=\"color: rgb(65, 65, 65); font-size: 14px\">This is a test Product</span>\n<br /></p>",
+      "pic": [
+        "/products/p31.jpg",
+        "/products/p32.jpg",
+        "/products/p33.jpg"
+      ],
+      "active": true
+    },
+    {
+      "id": "f96f",
+      "name": "Wide Leg Trousers",
+      "category": "Female",
+      "SubCategory": "Trouser",
+      "brand": "US POLO ASSN",
+      "color": [
+        "grey",
+        "black",
+        "brown",
+        "red"
+      ],
+      "size": [
+        "xs",
+        "s",
+        "m",
+        "xxl",
+        "l",
+        "xl"
+      ],
+      "stockQuantity": 54,
+      "stock": true,
+      "basePrice": 2099,
+      "finalPrice": 1889,
+      "discount": 10,
+      "productDescription": "<p>\n\n<span style=\"color: rgb(65, 65, 65); font-size: 14px\">This is a test Product</span>\n<br /></p>",
+      "pic": [
+        "/products/p34.jpg",
+        "/products/p35.jpg",
+        "/products/p36.jpg"
+      ],
+      "active": true
+    },
+    {
+      "id": "0715",
+      "name": "Loose Fit Trousers",
+      "category": "Male",
+      "SubCategory": "Trouser",
+      "brand": "MUFTI",
+      "color": [
+        "grey",
+        "black"
+      ],
+      "size": [
+        "s",
+        "m",
+        "l"
+      ],
+      "stockQuantity": 17,
+      "stock": true,
+      "basePrice": 999,
+      "finalPrice": 949,
+      "discount": 5,
+      "productDescription": "<p>\n\n<span style=\"color: rgb(65, 65, 65); font-size: 14px\">This is a test Product</span>\n<br /></p>",
+      "pic": [
+        "/products/p37.jpg",
+        "/products/p38.jpg",
+        "/products/p39.jpg"
+      ],
+      "active": true
+    },
+    {
+      "id": "bfb0",
+      "name": "Slim Fit Trousers",
+      "category": "Male",
+      "SubCategory": "Trouser",
+      "brand": "Gucci",
+      "color": [
+        "brown",
+        "blue",
+        "yellow"
+      ],
+      "size": [
+        "m",
+        "l",
+        "xl",
+        "xxl",
+        "xs",
+        "s"
+      ],
+      "stockQuantity": 75,
+      "stock": true,
+      "basePrice": 5409,
+      "finalPrice": 3949,
+      "discount": 27,
+      "productDescription": "<p>\n\n<span style=\"color: rgb(65, 65, 65); font-size: 14px\">This is a test Product</span>\n<br /></p>",
+      "pic": [
+        "/products/p40.jpg",
+        "/products/p41.jpg",
+        "/products/p42.jpg"
+      ],
+      "active": true
+    },
+    {
+      "id": "4d2b",
+      "name": "Baggy Jeans",
+      "category": "Male",
+      "SubCategory": "Jeans",
+      "brand": "MUFTI",
+      "color": [
+        "blue",
+        "black",
+        "beige"
+      ],
+      "size": [
+        "s",
+        "m",
+        "l"
+      ],
+      "stockQuantity": 66,
+      "stock": true,
+      "basePrice": 2199,
+      "finalPrice": 1759,
+      "discount": 20,
+      "productDescription": "<p>\n\n<span style=\"color: rgb(65, 65, 65); font-size: 14px\">This is a test Product</span>\n<br /></p>",
+      "pic": [
+        "/products/p43.jpg",
+        "/products/p44.jpg",
+        "/products/p45.jpg"
+      ],
+      "active": true
+    },
+    {
+      "id": "05fb",
+      "name": "Slim Fit Jeans",
+      "category": "Female",
+      "SubCategory": "Jeans",
+      "brand": "MUFTI",
+      "color": [
+        "blue",
+        "brown",
+        "black"
+      ],
+      "size": [
+        "s",
+        "xs",
+        "m"
+      ],
+      "stockQuantity": 58,
+      "stock": true,
+      "basePrice": 2499,
+      "finalPrice": 1000,
+      "discount": 60,
+      "productDescription": "<p>\n\n<span style=\"color: rgb(65, 65, 65); font-size: 14px\">This is a test Product</span>\n<br /></p>",
+      "pic": [
+        "/products/p46.jpg",
+        "/products/p47.jpg",
+        "/products/p48.jpg"
+      ],
+      "active": true
+    }
+  ],
+  "settings": [
+    {
+      "map1": "https://www.google.com/maps/place/Jai+Vihar,+Baprola,+Delhi/@28.6376119,76.9796819,14z/data=!3m1!4b1!4m6!3m5!1s0x390d0f8bfc00f5c5:0x9c08e03996103335!8m2!3d28.6398718!4d77.0017465!16s%2Fg%2F1tqycwpb?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D",
+      "map2": "https://maps.google.com/maps?width=600&height=400&hl=en&q=jai%20vihar&t=&z=14&ie=UTF8&iwloc=B&output=embed",
+      "email": "sauravtiwari010@gmail.co",
+      "address": "jai-vihar",
+      "phone": "8882145156",
+      "whatsapp": "8882253020",
+      "facebook": "https://www.facebook.com",
+      "instagram": "https://www.instagram.com",
+      "twitter": "https://www.twitter.com",
+      "id": "1b4e"
+    }
+  ],
+  "user": [
+    {
+      "id": "5570",
+      "name": "saurav",
+      "userName": "saurav01",
+      "mobile": "8882145136",
+      "email": "sauravtiwari010@gmail.comm",
+      "pwd": "teteteE33",
+      "role": "Admin",
+      "active": true,
+      "gender": "male"
+    },
+    {
+      "id": "058e",
+      "name": "tiwari",
+      "userName": "tiwari90",
+      "mobile": "8882145188",
+      "email": "Rishabh.dev@gmail.comm",
+      "pwd": "teteteE33",
+      "role": "Buyer",
+      "active": false
+    },
+    {
+      "id": "KEAD",
+      "name": "Admino",
+      "userName": "admin01",
+      "mobile": "8882145138",
+      "email": "saurgvtiwari010@gmail.com",
+      "pwd": "teteteE33",
+      "role": "Buyer",
+      "active": true,
+      "gender": "female"
+    }
+  ],
+  "address": [
+    {
+      "id": "7491",
+      "userid": "5570",
+      "name": "Saurav Tiwari",
+      "mobile": "8882145136",
+      "pincode": "110043",
+      "locality": "Delhi",
+      "district": "Delhi",
+      "address": "H.No 156, Gali No. 7 , Jai Vihar, B-block, Phase 2",
+      "state": "Delhi"
+    },
+    {
+      "id": "ddc6",
+      "userid": "058e",
+      "name": "tiwar",
+      "mobile": "8882145130",
+      "pincode": "118004",
+      "locality": "Delhi",
+      "district": "Delhi",
+      "address": "H.No 156, Gali No. 7 , Jai Vihar, B-block, Phase ",
+      "state": "Delhi"
+    },
+    {
+      "id": "2307",
+      "userid": "058e",
+      "name": "Saurav Tiwar",
+      "mobile": "8882145133",
+      "pincode": "110043",
+      "locality": "Delhi",
+      "district": "Delhi",
+      "address": "H.No 156, Gali No. 7 , Jai Vihar, B-block, Phase 2",
+      "state": "Delhi"
+    },
+    {
+      "id": "c1f6",
+      "userid": "KEAD",
+      "name": "Home",
+      "mobile": "8882145136",
+      "pincode": "110045",
+      "locality": "Najafgarh",
+      "district": "Delhi",
+      "address": "H.No 156, Gali No. 7 , Jai Vihar, B-block, Phase 2",
+      "state": "Delhi"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "6cd1",
+      "orderID": "4WV1NXQM1CE",
+      "productID": "f96f",
+      "userID": "5570",
+      "BuyerName": "saurav",
+      "productName": "Wide Leg Trousers",
+      "rating": 4,
+      "review": "Good Trousers"
+    },
+    {
+      "id": "33eb",
+      "orderID": "4WV1NXQM1CE",
+      "productID": "bff5",
+      "userID": "5570",
+      "BuyerName": "saurav",
+      "productName": "Checked Shirt Half Sleeves",
+      "rating": 2,
+      "review": "not worth it"
+    },
+    {
+      "id": "449d",
+      "orderID": "YKY85KDAYQ",
+      "productID": "f96f",
+      "userID": "KEAD",
+      "BuyerName": "Admino",
+      "productName": "Wide Leg Trousers",
+      "rating": 1,
+      "review": "bad"
+    },
+    {
+      "id": "1c35",
+      "orderID": "YKY85KDAYQ",
+      "productID": "bff5",
+      "userID": "KEAD",
+      "BuyerName": "Admino",
+      "productName": "Checked Shirt Half Sleeves",
+      "rating": 5,
+      "review": "good"
+    }
+  ],
+  "cart": [],
+  "wishlist": [
+    {
+      "id": "f96f",
+      "name": "Wide Leg Trousers",
+      "category": "Female",
+      "SubCategory": "Trouser",
+      "brand": "US POLO ASSN",
+      "color": "brown",
+      "size": "l",
+      "stockQuantity": 66,
+      "stock": true,
+      "basePrice": 2099,
+      "finalPrice": 1889,
+      "discount": 10,
+      "productDescription": "<p>\n\n<span style=\"color: rgb(65, 65, 65); font-size: 14px\">This is a test Product</span>\n<br /></p>",
+      "pic": [
+        "/products/p34.jpg",
+        "/products/p35.jpg",
+        "/products/p36.jpg"
+      ],
+      "active": true,
+      "quantity": 1,
+      "userid": "058e"
+    }
+  ],
+  "newsletter": [
+    {
+      "id": "ee0c",
+      "email": "Rishabh.wordpress.dev@gmail.com",
+      "name": "saurav",
+      "userid": "5570",
+      "active": false
+    },
+    {
+      "id": "54c2",
+      "email": "yv@gmail.com",
+      "name": "saurav",
+      "userid": "5570",
+      "active": false
+    },
+    {
+      "id": "2d8b",
+      "email": "asaas@sadasdd",
+      "name": "saurav",
+      "userid": "5570",
+      "active": false
+    },
+    {
+      "id": "4634",
+      "email": "asadadd@sdsad",
+      "name": "saurav",
+      "userid": "5570",
+      "active": false
+    }
+  ],
+  "orders": [
+    {
+      "id": "4WV1NXQM1CE",
+      "userid": "5570",
+      "BuyerName": "saurav",
+      "orderStatus": "Order delivered",
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "orderDate": "12/9/2025",
+      "bagTotal": 2998,
+      "totalAmount": 2608,
+      "totalDiscount": 390,
+      "delivery": 149,
+      "shippingAddress": {
+        "name": "Saurav Tiwari",
+        "mobile": "8882145136",
+        "pincode": "110043",
+        "locality": "Delhi",
+        "district": "Delhi",
+        "address": "H.No 156, Gali No. 7 , Jai Vihar, B-block, Phase 2",
+        "state": "Delhi"
+      },
+      "products": [
+        {
+          "id": "f96f",
+          "name": "Wide Leg Trousers",
+          "category": "Female",
+          "SubCategory": "Trouser",
+          "brand": "US POLO ASSN",
+          "color": "black",
+          "size": "m",
+          "stockQuantity": 54,
+          "stock": true,
+          "basePrice": 2099,
+          "finalPrice": 1889,
+          "discount": 10,
+          "productDescription": "<p>\n\n<span style=\"color: rgb(65, 65, 65); font-size: 14px\">This is a test Product</span>\n<br /></p>",
+          "pic": [
+            "/products/p34.jpg",
+            "/products/p35.jpg",
+            "/products/p36.jpg"
+          ],
+          "active": true,
+          "quantity": 1,
+          "userid": "5570"
+        },
+        {
+          "id": "bff5",
+          "name": "Checked Shirt Half Sleeves",
+          "category": "Male",
+          "SubCategory": "Shirt",
+          "brand": "Gucci",
+          "color": "beige",
+          "size": "l",
+          "stockQuantity": 57,
+          "stock": true,
+          "basePrice": 899,
+          "finalPrice": 719,
+          "discount": 20,
+          "productDescription": "<p>This is a test Product</p>",
+          "pic": [
+            "/products/p10.jpg",
+            "/products/p11.jpg",
+            "/products/p12.jpg"
+          ],
+          "active": true,
+          "quantity": 1,
+          "userid": "5570"
+        }
+      ]
+    },
+    {
+      "id": "YKY85KDAYQ",
+      "userid": "KEAD",
+      "BuyerName": "Admino",
+      "orderStatus": "Order delivered",
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "orderDate": "12/9/2025",
+      "bagTotal": 2998,
+      "totalAmount": 2608,
+      "totalDiscount": 390,
+      "delivery": 149,
+      "shippingAddress": {
+        "name": "Home",
+        "mobile": "8882145136",
+        "pincode": "110045",
+        "locality": "Najafgarh",
+        "district": "Delhi",
+        "address": "H.No 156, Gali No. 7 , Jai Vihar, B-block, Phase 2",
+        "state": "Delhi"
+      },
+      "products": [
+        {
+          "id": "f96f",
+          "name": "Wide Leg Trousers",
+          "category": "Female",
+          "SubCategory": "Trouser",
+          "brand": "US POLO ASSN",
+          "color": "brown",
+          "size": "xl",
+          "stockQuantity": 54,
+          "stock": true,
+          "basePrice": 2099,
+          "finalPrice": 1889,
+          "discount": 10,
+          "productDescription": "<p>\n\n<span style=\"color: rgb(65, 65, 65); font-size: 14px\">This is a test Product</span>\n<br /></p>",
+          "pic": [
+            "/products/p34.jpg",
+            "/products/p35.jpg",
+            "/products/p36.jpg"
+          ],
+          "active": true,
+          "quantity": 1,
+          "userid": "KEAD"
+        },
+        {
+          "id": "bff5",
+          "name": "Checked Shirt Half Sleeves",
+          "category": "Male",
+          "SubCategory": "Shirt",
+          "brand": "Gucci",
+          "color": "green",
+          "size": "xxl",
+          "stockQuantity": 57,
+          "stock": true,
+          "basePrice": 899,
+          "finalPrice": 719,
+          "discount": 20,
+          "productDescription": "<p>This is a test Product</p>",
+          "pic": [
+            "/products/p10.jpg",
+            "/products/p11.jpg",
+            "/products/p12.jpg"
+          ],
+          "active": true,
+          "quantity": 1,
+          "userid": "KEAD"
+        }
+      ]
+    }
+  ],
+  "contact": [
+    {
+      "id": "6ha2",
+      "userid": "5570",
+      "name": "saurav",
+      "userName": "saurav01",
+      "email": "sauravtiwari010@gmail.com",
+      "mobile": "8882145136",
+      "message": "cscssdddddcs"
+    }
+  ]
+}
