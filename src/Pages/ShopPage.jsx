@@ -62,8 +62,8 @@ export default function ShopPage() {
   }
 
   function isInclude(arr1, arr2) {
-  return arr1.some(item => arr2.includes(item))
-}
+    return arr1.some(item => arr2.includes(item))
+  }
 
 
   function applyFilter(ct, st, br, color, size, min = -1, max = -1) {
@@ -135,21 +135,38 @@ export default function ShopPage() {
   useEffect(() => { (() => { Dispatch(GetCategory()) })() }, [CategoryStateData.length])
   useEffect(() => { (() => { Dispatch(GetSubCategory()) })() }, [SubCategoryStateData.length])
   useEffect(() => { (() => { Dispatch(GetBrand()) })() }, [brandStateData.length])
+  useEffect(() => { Dispatch(GetProduct()) }, [])
   useEffect(() => {
-    (() => {
-      Dispatch(GetProduct())
+    const ct = searchParams.get("cg") ? [searchParams.get("cg")] : []
+    const st = searchParams.get("sc") ? [searchParams.get("sc")] : []
+    const br = searchParams.get("br") ? [searchParams.get("br")] : []
 
-      let ct = searchParams.get("ct") ? [searchParams.get("ct")] : []
-      let st = searchParams.get("st") ? [searchParams.get("st")] : []
-      let br = searchParams.get("br") ? [searchParams.get("br")] : []
-      setSelectedCategory(ct)
-      setSelectedSubCategory(st)
-      setSelectedBrand(br)
-      if (ProductStateData.length) {
-        applyFilter(ct, st, br, selectedColor, selectedSize)
-      }
-    })()
-  }, [ProductStateData.length, searchParams])
+    setSelectedCategory(ct)
+    setSelectedSubCategory(st)
+    setSelectedBrand(br)
+    console.log(ct,st,br);
+    
+  }, [searchParams.toString()])
+
+  useEffect(() => {
+    if (ProductStateData.length) {
+      applyFilter(
+        selectedCategory,
+        selectedSubCategory,
+        selectedBrand,
+        selectedColor,
+        selectedSize
+      )
+    }
+  }, [
+    ProductStateData.length,
+    selectedCategory,
+    selectedSubCategory,
+    selectedBrand,
+    selectedColor,
+    selectedSize
+  ])
+
   return (
     <>
       {/*start page content*/}
@@ -516,7 +533,7 @@ export default function ShopPage() {
                               </div>
                             </div>
                             <hr />
-                             <div className="colors"> {/*size */}
+                            <div className="colors"> {/*size */}
                               <h6 className="p-1 fw-bold bg-light">Size</h6>
                               <div className="color-wrapper height-1 p-1">
                                 <div className="form-check">
@@ -609,11 +626,11 @@ export default function ShopPage() {
                                     <span className="product-number">({product.filter(c => c.size.includes("xxl")).length})</span>
                                   </label>
                                 </div>
-                                
+
                               </div>
                             </div>
                             <hr />
-                           
+
                           </div>
                         </div>
                       </div>
