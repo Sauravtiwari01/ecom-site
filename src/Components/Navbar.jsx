@@ -12,9 +12,13 @@ export default function Navbar() {
   let navigate = useNavigate()
   function userLogOut() {
     localStorage.clear()
+    mobileNavToggle()
     navigate("/login")
   }
-
+  let [toggleMobileNav, setToggleMobileNav] = useState(true)
+  function mobileNavToggle() {
+    setToggleMobileNav(!toggleMobileNav)
+  }
   useEffect(() => { dispatch(GetCategory()) }, [CategoryStateData.length])
   useEffect(() => { dispatch(GetCart()) }, [cartStateData.length])
   useEffect(() => { dispatch(GetSubCategory()) }, [SubCategoryStateData.length])
@@ -39,13 +43,16 @@ export default function Navbar() {
             <a
               className="mobile-menu-btn d-inline d-xl-none"
               href="javascript:;"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
+              // data-bs-toggle="offcanvas"
+              // data-bs-target="#offcanvasNavbar"
+            onClick={mobileNavToggle}
             >
               <i className="bi bi-list" />
             </a>
             <div
-              className="offcanvas offcanvas-start"
+              className={`offcanvas offcanvas-start ${toggleMobileNav ? "show" : ""}`}
+              style={{ visibility: toggleMobileNav ? "visible" : "hidden" }}
+
               tabIndex={-1}
               id="offcanvasNavbar"
             >
@@ -56,14 +63,15 @@ export default function Navbar() {
                 <button
                   type="button"
                   className="btn-close text-reset"
-                  data-bs-dismiss="offcanvas"
+                  // data-bs-dismiss="offcanvas"
+                  onClick={mobileNavToggle}
                   aria-label="Close"
                 />
               </div>
               <div className="offcanvas-body primary-menu">
                 <ul className="navbar-nav justify-content-start flex-grow-1 gap-1">
                   <li className="nav-item">
-                    <Link className="nav-link" to="/">
+                    <Link onClick={mobileNavToggle} className="nav-link" to="/">
                       Home
                     </Link>
                   </li>
@@ -83,7 +91,7 @@ export default function Navbar() {
                             {
                               CategoryStateData.filter(x => x.active).map(item => {
                                 return <li key={item.id}>
-                                  <Link to={`/shop?cg=${item.name}`}>{item.name}</Link>
+                                  <Link onClick={mobileNavToggle} to={`/shop?cg=${item.name}`}>{item.name}</Link>
                                 </li>
                               })
                             }
@@ -97,7 +105,7 @@ export default function Navbar() {
                             {
                               SubCategoryStateData.filter(x => x.active).map(item => {
                                 return <li key={item.id}>
-                                  <Link to={`/shop?sc=${item.name}`}>{item.name}</Link>
+                                  <Link onClick={mobileNavToggle} to={`/shop?sc=${item.name}`}>{item.name}</Link>
                                 </li>
                               })
                             }
@@ -119,36 +127,36 @@ export default function Navbar() {
                     </div>
                   </li>
                   <li className="nav-item dropdown">
-                    <Link
+                    <Link onClick={mobileNavToggle}
                       className="nav-link " to="/shop">
                       Shop
                     </Link>
                   </li>
                   <li className="nav-item dropdown">
-                    <Link
+                    <Link onClick={mobileNavToggle}
                       className="nav-link " to="/about">
                       About
                     </Link>
                   </li>
                   <li className="nav-item dropdown">
-                    <Link
+                    <Link onClick={mobileNavToggle}
                       className="nav-link " to="/features">
                       Features
                     </Link>
                   </li>
                   <li className="nav-item dropdown">
-                    <Link
+                    <Link onClick={mobileNavToggle}
                       className="nav-link " to="/contact">
                       Contact Us
                     </Link>
                   </li>
 
                   {localStorage.getItem('role') === "Admin" ? <li className="nav-item dropdown">
-                    <Link
+                    <Link  onClick={mobileNavToggle}
                       className="nav-link " to="/admin">
                       Admin
                     </Link>
-                  </li> :"" }
+                  </li> : ""}
 
 
 
@@ -162,27 +170,27 @@ export default function Navbar() {
                     </Link>
                     <ul className="dropdown-menu">
                       <li>
-                        <Link className="dropdown-item" to="/dashboard">
+                        <Link onClick={mobileNavToggle} className="dropdown-item" to="/dashboard">
                           Dashboard
                         </Link>
                       </li>
                       <li>
-                        <Link className="dropdown-item" to="/orders">
+                        <Link onClick={mobileNavToggle} className="dropdown-item" to="/orders">
                           My Orders
                         </Link>
                       </li>
                       <li>
-                        <Link className="dropdown-item" to="/profile">
+                        <Link onClick={mobileNavToggle} className="dropdown-item" to="/profile">
                           My Profile
                         </Link>
                       </li>
                       <li>
-                        <Link className="dropdown-item" to="/update-profile">
+                        <Link onClick={mobileNavToggle} className="dropdown-item" to="/update-profile">
                           Edit Profile
                         </Link>
                       </li>
                       <li>
-                        <Link
+                        <Link onClick={mobileNavToggle}
                           className="dropdown-item"
                           to="address"
                         >
@@ -199,7 +207,7 @@ export default function Navbar() {
                       </li>
                     </ul>
                   </li> : <li className="nav-item dropdown">
-                    <Link
+                    <Link onClick={mobileNavToggle}
                       className="nav-link " to="/login">
                       Login
                     </Link>
@@ -233,7 +241,7 @@ export default function Navbar() {
                 data-bs-target="#offcanvasRight"
               >
                 <Link className="nav-link position-relative" to="/cart">
-                  <div className="cart-badge">{cartStateData.filter(x=>x.userid===localStorage.getItem("userid")).length}</div>
+                  <div className="cart-badge">{cartStateData.filter(x => x.userid === localStorage.getItem("userid")).length}</div>
                   <i className="bi bi-basket2" />
                 </Link>
               </li>
