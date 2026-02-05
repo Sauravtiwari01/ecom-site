@@ -796,7 +796,54 @@
       "review": "good"
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": "c983",
+      "name": "Tiger Printed Shirt",
+      "category": "Male",
+      "SubCategory": "Shirt",
+      "brand": "MUFTI",
+      "color": "green",
+      "size": "m",
+      "stockQuantity": 4,
+      "stock": true,
+      "basePrice": 799,
+      "finalPrice": 719,
+      "discount": 10,
+      "productDescription": "<p>This is a test product</p>",
+      "pic": [
+        "/products/p13.jpg",
+        "/products/p14.jpg",
+        "/products/p15.jpg"
+      ],
+      "active": true,
+      "quantity": 1,
+      "userid": "5570"
+    },
+    {
+      "id": "f96f",
+      "name": "Wide Leg Trousers",
+      "category": "Female",
+      "SubCategory": "Trouser",
+      "brand": "US POLO ASSN",
+      "color": "black",
+      "size": "m",
+      "stockQuantity": 54,
+      "stock": true,
+      "basePrice": 2099,
+      "finalPrice": 1889,
+      "discount": 10,
+      "productDescription": "<p>\n\n<span style=\"color: rgb(65, 65, 65); font-size: 14px\">This is a test Product</span>\n<br /></p>",
+      "pic": [
+        "/products/p34.jpg",
+        "/products/p35.jpg",
+        "/products/p36.jpg"
+      ],
+      "active": true,
+      "quantity": 1,
+      "userid": "5570"
+    }
+  ],
   "wishlist": [
     {
       "id": "f96f",

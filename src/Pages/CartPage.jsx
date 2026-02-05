@@ -15,8 +15,8 @@ export default function CartPage() {
   let [data, setData] = useState([])
   let dispatch = useDispatch()
   let navigate = useNavigate()
-  let id = useParams()
-
+  let {id} = useParams()
+console.log(db.cart)
   function removeItem(id) {
     if (window.confirm("Are you sure?")) {
       dispatch(DeleteCart({ id: id }))

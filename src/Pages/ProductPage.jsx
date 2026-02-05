@@ -60,7 +60,8 @@ export default function ProductPage() {
   function addToCart(e) {
     const colorError = color ? "" : "Select Color";
     const sizeError = size ? "" : "Select Size";
-
+    
+    
     if (colorError || sizeError) {
       setErrormessage({ color: colorError, size: sizeError });
       setShow(true);
@@ -94,6 +95,7 @@ export default function ProductPage() {
     setSize("")
     setQuantity(1)
     dispatch(GetCart())
+    console.log("work");
   }
   const notify = (msg) => toast(msg);
   function addToWishlist() {
@@ -150,7 +152,6 @@ export default function ProductPage() {
       const total = ratingData.reduce((sum, item) => sum + Number(item.rating), 0)
       const avg = total / ratingData.length
       setRating(avg)
-      console.log(rating)
     }
     else
       setRating(0)
