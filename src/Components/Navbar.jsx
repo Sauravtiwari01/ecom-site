@@ -15,7 +15,7 @@ export default function Navbar() {
     mobileNavToggle()
     navigate("/login")
   }
-  let [toggleMobileNav, setToggleMobileNav] = useState(true)
+  let [toggleMobileNav, setToggleMobileNav] = useState(false)
   function mobileNavToggle() {
     setToggleMobileNav(!toggleMobileNav)
   }
