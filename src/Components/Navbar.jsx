@@ -4,10 +4,11 @@ import { Link, useNavigate } from 'react-router-dom'
 import { GetCategory } from '../Redux/ActionCreators/CategoryActionCreator'
 import { GetSubCategory } from '../Redux/ActionCreators/SubCategoryActionCreator'
 import { GetCart } from '../Redux/ActionCreators/CartActionCreator'
+import db from "../data/data.json"
 export default function Navbar() {
-  let CategoryStateData = useSelector(state => state.CategoryStateData)
-  let SubCategoryStateData = useSelector(state => state.SubCategoryStateData)
-  let cartStateData = useSelector(state => state.cartStateData)
+  let CategoryStateData = db.category
+  let SubCategoryStateData = db['sub-category']
+  let cartStateData = db.cart
   let dispatch = useDispatch()
   let navigate = useNavigate()
   function userLogOut() {
